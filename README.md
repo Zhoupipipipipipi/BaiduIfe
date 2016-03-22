@@ -27,7 +27,7 @@ relative 相对；absolute 绝对 一般要设置一个为relative，不然元�
 3.垂直居中：要设置父元素的position为relative，子元素为absolute，top为50%，margin-top:-npx(为本身高度的50%，减去)  
 4.水平居中：同上  
 5.要是整个html界面不动，要设置  
-·*{
+`*{
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,7 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-}·
+}`
 #task5:零基础HTML及CSS编码（二）
 [成品](http://codepen.io/zhoupipipipipipi/full/MypWGQ/)
 ####任务目的:  
@@ -54,22 +54,24 @@ html,body{
 7.css3 @media screen and (max-width:XXpx){css-code}  
 使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。  
 @media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。  当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
-#task5:零基础HTML及CSS编码（二）
-[成品](http://codepen.io/zhoupipipipipipi/full/MypWGQ/)
+#task6：通过HTML及CSS模拟报纸排版
+[成品](http://s.codepen.io/zhoupipipipipipi/debug/JXWgJg)
 ####任务目的:  
-*基于第一个任务“零基础HTML编码”的代码，参考 示例图（点击查看），在步骤一的代码基础上增加CSS样式代码的编写  *头部和底部的黑色区域始终是100%宽  
-*页面右侧部分为固定宽度，左侧保持与浏览器窗口变化同步自适应变化  
-*左侧的各个模块里面的内容宽度跟随左侧整体宽度同步自适应变化  *10张图片需要永远都完整展现，所以会随着宽度变窄，从两行变成三行甚至更多，也有可能随着宽度变宽，变成一行
+*参考 PDS设计稿（点击下载），实现页面开发，要求实现效果与 样例（点击查看） 基本一致 *头部和底部的黑色区域始终是100%宽  
+*页面中的各字体大小，内外边距等可参看 标注图（点击查看）
+*页面宽度固定（定宽）
 ####总结:
-1.overflow:auto 可以让div的高出现，内容被剪切，则浏览器会显示滚动条  
-  hidden 内容被剪切，其余内容不可见   
-  scroll 显示滚动条 不管内容有没有被剪切  
-2.img设置百分比可以根据浏览器自适应  
-3.footer用了relative可以在底部，可能是头部用了absolute  
-4.分栏问题，右边固定，用float：right,左边要设置margin-right  
-5.small要设置margin，外面要加个div  
-6.自适应要让高度和宽度为auto 或者宽度为100%  
-7.css3 @media screen and (max-width:XXpx){css-code}  
-使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。  
-@media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。  当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
+1.要让颜色覆盖在图片上时，或者字体覆盖在图片上时，应该使用position：absolute；生成绝对定位的元素，相对于 static   定位以外的第一个父元素进行定位。
+2.clear:both;在css中，首先我们理解一下clear，顾名思义就是清除的意思，both的意思是全部，那连起来就是清除全部样式，不过这个样式主要是用于对多个div浮动的清除，如float:left,如果不清除，很容易对下面的div造成显示错位
+3.三角形那个我不会弄！！
+#task8：响应式网格（栅格化）布局
+[成品](http://s.codepen.io/zhoupipipipipipi/debug/xVdxya)
+####任务目的:  
+*使用 HTML 与 CSS 实现类似 BootStrap 的响应式 12 栏网格布局，根据屏幕宽度，元素占的栏数不同。
+####总结:
+1.由于之前用过bootstrap，所以以为会比较容易，结果还是有很多点没有考虑到
+2.关于宽度，刚开始一直不知道怎么将margin包含在width里面，看了别人的笔记，知道了css3中calc和box-sizing  
+  [CSS3的calc的使用](http://www.w3cplus.com/css3/how-to-use-css3-calc-function.html)  
+  改为双层样式，即外层控制宽度、高度，内层控制border样式、margin样式；然后width=calc(100%-20px);20px=(padding*2);
+  
 
