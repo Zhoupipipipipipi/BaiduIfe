@@ -60,13 +60,13 @@ html,body{
 ####队友建议
 1.目前Task5存在的问题
 ## float引起的高度塌陷问题，有若干解决办法
->http://blog.useasp.net/archive/2012/06/12/when-we-use-div-and-css-how-to-make-parent-container-div-to-self-adaption-with-subcontainer-height.aspx
+>http://blog.useasp.net/archive/2012/06/12/when-we-use-div-and-css-how-to-make-parent-container-div-to-self-adaption-with-subcontainer-height.aspx  
 通常情况下，absolute还是少用比较好
 ## 段首缩进
 段首缩进可以用更加"优雅"的办法`text-indent: 20px`
 ## label的问题
 在`form`中，`label`和`input`,`checkbox`的搭配使用，也是比较重要的，可以参见这个
->http://bbs.blueidea.com/thread-2711834-1-1.html
+>http://bbs.blueidea.com/thread-2711834-1-1.html  
 #task6：通过HTML及CSS模拟报纸排版
 [task6作品](http://s.codepen.io/zhoupipipipipipi/debug/JXWgJg)
 ####任务目的:  
