@@ -1,4 +1,5 @@
 #task2:零基础HTML及CSS编码（一)  
+[task2作品](http://s.codepen.io/zhoupipipipipipi/debug/JXNbRK)
 ####任务目的:
 *针对设计稿样式进行合理的HTML架构，包括以下但不限于：  
 *掌握常用HTML标签的含义、用法  
@@ -12,6 +13,7 @@
 1.关于label的使用：要使它右对齐外面应该有一个div  
 2.导航记得要用到float：left
 #task3:三栏式布局
+[task3作品](http://s.codepen.io/zhoupipipipipipi/debug/pyPNNB)
 ####任务目的:
 *使用 HTML 与 CSS 按照 示例图（点击查看） 实现三栏式布局。 *左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器。背景色为 #eee 区域的高度取决于三个子元素中最高的高度。
 ####总结:
