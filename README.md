@@ -19,6 +19,7 @@
 ####总结:
 1.浏览器自适应，定义左边logo为float：left，右边log为float：right，让中间内容高度和宽度auto，这样就可以让浏览器自适应
 #task4:定位和居中问题
+[task4作品](http://s.codepen.io/zhoupipipipipipi/debug/WwjoRL)
 ####任务目的:
 *实现如 示例图（点击打开） 的效果  
 *灰色元素水平垂直居中，有两个四分之一圆位于其左上角和右下角。
@@ -39,7 +40,7 @@ html,body{
     overflow: hidden;
 }`
 #task5:零基础HTML及CSS编码（二）
-[成品](http://codepen.io/zhoupipipipipipi/full/MypWGQ/)
+[task5作品]http://s.codepen.io/zhoupipipipipipi/debug/MypWGQ)
 ####任务目的:  
 *基于第一个任务“零基础HTML编码”的代码，参考 示例图（点击查看），在步骤一的代码基础上增加CSS样式代码的编写  *头部和底部的黑色区域始终是100%宽  
 *页面右侧部分为固定宽度，左侧保持与浏览器窗口变化同步自适应变化  
@@ -56,8 +57,18 @@ html,body{
 7.css3 @media screen and (max-width:XXpx){css-code}  
 使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。  
 @media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。  当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
+####队友建议
+1.目前Task5存在的问题
+## float引起的高度塌陷问题，有若干解决办法
+>http://blog.useasp.net/archive/2012/06/12/when-we-use-div-and-css-how-to-make-parent-container-div-to-self-adaption-with-subcontainer-height.aspx
+通常情况下，absolute还是少用比较好
+## 段首缩进
+段首缩进可以用更加"优雅"的办法`text-indent: 20px`
+## label的问题
+在`form`中，`label`和`input`,`checkbox`的搭配使用，也是比较重要的，可以参见这个
+>http://bbs.blueidea.com/thread-2711834-1-1.html
 #task6：通过HTML及CSS模拟报纸排版
-[成品](http://s.codepen.io/zhoupipipipipipi/debug/JXWgJg)
+[task6作品](http://s.codepen.io/zhoupipipipipipi/debug/JXWgJg)
 ####任务目的:  
 *参考 PDS设计稿（点击下载），实现页面开发，要求实现效果与 样例（点击查看） 基本一致 *头部和底部的黑色区域始终是100%宽  
 *页面中的各字体大小，内外边距等可参看 标注图（点击查看）
@@ -67,7 +78,7 @@ html,body{
 2.clear:both;在css中，首先我们理解一下clear，顾名思义就是清除的意思，both的意思是全部，那连起来就是清除全部样式，不过这个样式主要是用于对多个div浮动的清除，如float:left,如果不清除，很容易对下面的div造成显示错位
 3.三角形那个我不会弄！！
 #task8：响应式网格（栅格化）布局
-[成品](http://s.codepen.io/zhoupipipipipipi/debug/xVdxya)
+[task8作品](http://s.codepen.io/zhoupipipipipipi/debug/xVdxya)
 ####任务目的:  
 *使用 HTML 与 CSS 实现类似 BootStrap 的响应式 12 栏网格布局，根据屏幕宽度，元素占的栏数不同。
 ####总结:
