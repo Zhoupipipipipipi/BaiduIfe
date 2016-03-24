@@ -40,7 +40,7 @@ html,body{
     overflow: hidden;
 }`
 #task5:零基础HTML及CSS编码（二）
-[task5作品]http://s.codepen.io/zhoupipipipipipi/debug/MypWGQ)
+[task5作品](http://s.codepen.io/zhoupipipipipipi/debug/MypWGQ)
 ####任务目的:  
 *基于第一个任务“零基础HTML编码”的代码，参考 示例图（点击查看），在步骤一的代码基础上增加CSS样式代码的编写  *头部和底部的黑色区域始终是100%宽  
 *页面右侧部分为固定宽度，左侧保持与浏览器窗口变化同步自适应变化  
@@ -86,5 +86,17 @@ html,body{
 2.关于宽度，刚开始一直不知道怎么将margin包含在width里面，看了别人的笔记，知道了css3中calc和box-sizing  
   [CSS3的calc的使用](http://www.w3cplus.com/css3/how-to-use-css3-calc-function.html)  
   改为双层样式，即外层控制宽度、高度，内层控制border样式、margin样式；然后width=calc(100%-20px);20px=(padding*2);
-  
+#task10：Flexbox 布局练习
+[task10作品](http://s.codepen.io/zhoupipipipipipi/debug/MymZoG)
+####任务目的:  
+*学习如何flex进行布局，学习如何根据屏幕宽度调整布局策略。
+####总结:
+1.第一次接触flexbox，很好用，可以用来做多栏，以下是一些要点  
+2.flexbox 布局模块 有主轴(main)和侧轴(cross)，用display:flex实现  
+3.flex-flow：flex-direction(项目方向：row,row-reverse,column,column-reverse)，flex-wrap(是否拆行或拆列:nowrap,wrap,wrap-reverse)  
+4.justify-content 适用于父容器，横轴方向对齐方式 flex-start,flex-end,center,space-around,space-between  
+5.align-content:侧轴全部内容，同上  
+6.align-items:适用于父容器，单个项目，同上  
+7.order:<number>控制出现的顺序  
+8.flex-frow:<number>控制伸缩扩展多少
 
