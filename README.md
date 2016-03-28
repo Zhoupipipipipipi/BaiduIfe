@@ -99,4 +99,16 @@ html,body{
 6.align-items:适用于父容器，单个项目，同上  
 7.order:<number>控制出现的顺序  
 8.flex-frow:<number>控制伸缩扩展多少
+#task11：Flexbox 布局练习
+[task11作品](http://s.codepen.io/zhoupipipipipipi/debug/jqwavW)
+####任务目的:  
+*进行移动开发时的HTML及CSS实践  
+*掌握移动Web开发在页面架构和布局的方法及差异性  
+*掌握移动Web开发页面调试的方法
+####总结:
+1.手机端 meta 强制让文档的宽度与与设备的宽度保持：1：1，并且文档的最大宽度为1，且不允许用户点击屏幕放大  
+  `<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">`
+2.flexbox的使用，但是要考虑兼容性 [使用Flexbox：新旧语法混用实现最佳浏览器兼容](http://www.w3cplus.com/css3/using-flexbox.html)  
+3.行内元素没有margin-top，margin-bottom
+
 
