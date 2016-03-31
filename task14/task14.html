@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task14</title>
+</head>
+<body>
+    <h4>电影排行榜</h4>
+    <ol id="movie-list">
+    </ol>
+    <script>
+        var movies=[          /*二维数组*/
+            ['港囧',16],
+            ['侏罗纪世界',14],
+            ['碟中谍5',8],
+            ['美人鱼',33],
+            ['捉妖记',24]
+        ];
+        /*遍历整个数组，进行冒泡排序*/
+        window.onload=function(){
+            for(var i=movies.length-1;i>0;i--){
+                for(var j=0;j<i;j++){
+                    if(movies[j][1]<movies[j+1][1]){
+                        var n=movies[j];
+                        movies[j]=movies[j+1];
+                        movies[j+1]=n;
+                    }
+                }
+            }
+            var j=1;
+            /*判断大于15亿的影片*/
+            for(var i=0;i<movies.length;i++){
+                if(movies[i][1]>=15){
+                    var ol=document.getElementById('movie-list');
+                    var li=document.createElement('li');
+                    li.innerHTML='第'+j+'名是《'+movies[i][0]+'》';
+                    ol.appendChild(li);
+                    j++;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
