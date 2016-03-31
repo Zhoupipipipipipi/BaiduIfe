@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task13</title>
+</head>
+<body>
+    <label>你喜欢的水果是：</label>
+    <input type="text" placeholder="fruit" id="fruit">
+    <button type="button" onclick="myFunction()">确认提交</button>
+    <p>你输入的是：<span id="change">尚未输入</span></p>
+    <script>
+        function myFunction(){
+            var ans=document.getElementById('fruit').value;
+            if(ans==''){
+                alert('请输入你喜欢的水果');
+            }
+            else
+                document.getElementById('change').innerHTML=ans;
+        }
+    </script>
+</body>
+</html>
