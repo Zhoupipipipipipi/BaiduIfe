@@ -99,7 +99,7 @@ html,body{
 6.align-items:适用于父容器，单个项目，同上  
 7.order:<number>控制出现的顺序  
 8.flex-frow:<number>控制伸缩扩展多少
-#task11：Flexbox 布局练习
+#task11：移动Web页面布局实践
 [task11作品](http://s.codepen.io/zhoupipipipipipi/debug/jqwavW)
 ####任务目的:  
 *进行移动开发时的HTML及CSS实践  
@@ -110,5 +110,34 @@ html,body{
   `<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">`  
 2.flexbox的使用，但是要考虑兼容性 [使用Flexbox：新旧语法混用实现最佳浏览器兼容](http://www.w3cplus.com/css3/using-flexbox.html)  
 3.行内元素没有margin-top，margin-bottom
-
+#task13：零基础JavaScript编码（一）
+[task11作品](http://codepen.io/zhoupipipipipipi/pen/mPBQvK)  
+#task14：零基础JavaScript编码（二）
+[task14作品](http://codepen.io/zhoupipipipipipi/pen/KzXrEP)
+####任务目的:  
+*在上一任务基础上继续JavaScript的体验  
+*学习JavaScript中的if判断语法，for循环语法  
+*学习JavaScript中的数组对象  
+*学习如何读取、处理数据，并动态创建、修改DOM中的内容
+####总结:
+1.二维数组的运用  
+http://zhidao.baidu.com/link?url=eaVMODp-81l7s5n6M0XBftetUZIF8LVC6xC3AefqTpBvoiBA4MRaeuuUB_A3vF5InHksUx2bsbeyjpDInsph0q
+2.动态添加ul里面的li http://www.liangshunet.com/ca/201408/336848696.htm
+3.遍历整个数组，冒泡排序  
+#task15：零基础JavaScript编码（三）
+[task15作品](http://codepen.io/zhoupipipipipipi/pen/pyWQYo)
+####任务目的:  
+*在上一任务基础上继续JavaScript的体验  
+*接触一下JavaScript中的高级选择器  
+*学习JavaScript中的数组对象遍历、读写、排序等操作  
+*学习简单的字符串处理操作
+####总结:
+1.要比较数组里面数的大小，应该是数字类型，不然就得强制转换 parseInt();  
+2.获取元素的内容，用innnerHTML  
+3.获取元素内容的一部分，可以用substring(startnum,stopnum)  http://www.w3school.com.cn/jsref/jsref_substring.asp  
+4.如果在函数中调用另外一个函数的数值，记得return  
+5.var data=new Array(new Array(),new Array());    //定义二维数组  
+6.获取有多少个li，应该用li.length,而不是ul.length  
+7.在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数  
+document.getElementById('sort-btn').onclick=function(){btnHandle()};  
 
