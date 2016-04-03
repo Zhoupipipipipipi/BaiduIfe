@@ -74,9 +74,9 @@ html,body{
 *页面中的各字体大小，内外边距等可参看 标注图（点击查看）
 *页面宽度固定（定宽）
 ####总结:
-1.要让颜色覆盖在图片上时，或者字体覆盖在图片上时，应该使用position：absolute；生成绝对定位的元素，相对于 static   定位以外的第一个父元素进行定位。
-2.clear:both;在css中，首先我们理解一下clear，顾名思义就是清除的意思，both的意思是全部，那连起来就是清除全部样式，不过这个样式主要是用于对多个div浮动的清除，如float:left,如果不清除，很容易对下面的div造成显示错位
-3.三角形那个我不会弄！！
+1.要让颜色覆盖在图片上时，或者字体覆盖在图片上时，应该使用position：absolute；生成绝对定位的元素，相对于 static   定位以外的第一个父元素进行定位。  
+2.clear:both;在css中，首先我们理解一下clear，顾名思义就是清除的意思，both的意思是全部，那连起来就是清除全部样式，不过这个样式主要是用于对多个div浮动的清除，如float:left,如果不清除，很容易对下面的div造成显示错位  
+3.三角形那个我不会弄！！css三角形  
 #task8：响应式网格（栅格化）布局
 [task8作品](http://s.codepen.io/zhoupipipipipipi/debug/xVdxya)
 ####任务目的:  
@@ -111,7 +111,7 @@ html,body{
 2.flexbox的使用，但是要考虑兼容性 [使用Flexbox：新旧语法混用实现最佳浏览器兼容](http://www.w3cplus.com/css3/using-flexbox.html)  
 3.行内元素没有margin-top，margin-bottom
 #task13：零基础JavaScript编码（一）
-[task11作品](http://codepen.io/zhoupipipipipipi/pen/mPBQvK)  
+[task13作品](http://codepen.io/zhoupipipipipipi/pen/mPBQvK)  
 #task14：零基础JavaScript编码（二）
 [task14作品](http://codepen.io/zhoupipipipipipi/pen/KzXrEP)
 ####任务目的:  
