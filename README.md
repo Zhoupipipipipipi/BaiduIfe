@@ -120,9 +120,9 @@ html,body{
 *学习JavaScript中的数组对象  
 *学习如何读取、处理数据，并动态创建、修改DOM中的内容
 ####总结:
-1.二维数组的运用  
-http://zhidao.baidu.com/link?url=eaVMODp-81l7s5n6M0XBftetUZIF8LVC6xC3AefqTpBvoiBA4MRaeuuUB_A3vF5InHksUx2bsbeyjpDInsph0q
-2.动态添加ul里面的li http://www.liangshunet.com/ca/201408/336848696.htm
+1.二维数组的运用   
+http://zhidao.baidu.com/link?url=eaVMODp-81l7s5n6M0XBftetUZIF8LVC6xC3AefqTpBvoiBA4MRaeuuUB_A3vF5InHksUx2bsbeyjpDInsph0q  
+2.动态添加ul里面的li http://www.liangshunet.com/ca/201408/336848696.htm  
 3.遍历整个数组，冒泡排序  
 #task15：零基础JavaScript编码（三）
 [task15作品](http://codepen.io/zhoupipipipipipi/pen/pyWQYo)
@@ -140,4 +140,31 @@ http://zhidao.baidu.com/link?url=eaVMODp-81l7s5n6M0XBftetUZIF8LVC6xC3AefqTpBvoiB
 6.获取有多少个li，应该用li.length,而不是ul.length  
 7.在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数  
 document.getElementById('sort-btn').onclick=function(){btnHandle()};  
+#task16：零基础JavaScript编码（四）
+[task16作品](http://s.codepen.io/zhoupipipipipipi/debug/JXMGpr)
+####任务目的:  
+*在上一任务基础上继续JavaScript的体验  
+*深入学习JavaScript的事件机制及DOM操作  
+*学习事件代理机制  
+*学习简单的表单验证功能  
+*学习外部加载JavaScript文件
+####总结:
+1.去掉左右空格  
+`function strim(str){
+    return str.replace(/(^\s*)|(\s*$)/g,'');
+}`  
+然后直接调用函数strim就可以了。  
+2.判断是否为中文，用正则表达式   
+`var reg=new RegExp("[\\u4E00-\\u9FFF]+","g");
+    if(!reg.test(last_city)){       //判断输入的是否为汉字
+        alert("请输入汉字");
+        return;
+}`  
+3.判断是否为数字，isNaN（）
+4.如果在函数中调用另外一个函数的数值，记得return  
+5.停止js操作，用return 
+6.添加新的一行inserRow（）  
+7.parentNode 属性以 Node 对象的形式返回指定节点的父节点。如果指定节点没有父节点，则返回 null。  
+8.remove() 方法用于从下拉列表删除选项。  
+9.selectedIndex 属性可设置或返回下拉列表中被选选项的索引号。  
 
