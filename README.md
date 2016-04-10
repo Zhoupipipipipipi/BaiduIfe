@@ -167,4 +167,18 @@ document.getElementById('sort-btn').onclick=function(){btnHandle()};
 7.parentNode 属性以 Node 对象的形式返回指定节点的父节点。如果指定节点没有父节点，则返回 null。  
 8.remove() 方法用于从下拉列表删除选项。  
 9.selectedIndex 属性可设置或返回下拉列表中被选选项的索引号。  
-
+#task17：零基础JavaScript编码（五）
+[task17作品](http://s.codepen.io/zhoupipipipipipi/debug/reJVod)
+####任务目的:  
+*在上一任务基础上继续JavaScript的体验  
+*接触更加复杂的表单对象  
+*实现页面上的一个完整交互功能  
+*用DOM实现一个柱状图图表
+####总结:  
+虽然上面写着是基础编码，但是我还是觉得很难，刚开始完全不知道从那里入手，看了好多人的代码，慢慢思考理解，加入自己的想法，终于搞定了这个任务。只要搞懂了里面的东西，就相当于我掌握了
+1.getMonth()，取得的范围为0-11，所以获得月份的时候应该是getMonth（）+1  
+2.关于Math的各种方法，Math.ceil:返回的是大于或等于函数参数，并且与之最接近的整数。Math.random:随机选取大于等于 0.0 且小于 1.0 的伪随机 double；Math.round:四舍五入  
+3.渲染图表，匿名函数 var childWidth=function(){...}();  
+4.使用for..in循环遍历对象属性 有优点也有缺点 http://www.jb51.net/article/43119.htm  
+5.addEventListener() 方法用于向指定元素添加事件句柄。在点击radio和select时调用这个事件，有三个参数：事件本身（目标），触发事件时调用的函数（监听器），以及用来指定事件被捕获（true）还是冒泡（false）的布尔值（可选）。  
+6.最难的是初始化图表需要的数据格式，分为日周月
