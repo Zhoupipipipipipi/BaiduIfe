@@ -182,3 +182,13 @@ document.getElementById('sort-btn').onclick=function(){btnHandle()};
 4.使用for..in循环遍历对象属性 有优点也有缺点 http://www.jb51.net/article/43119.htm  
 5.addEventListener() 方法用于向指定元素添加事件句柄。在点击radio和select时调用这个事件，有三个参数：事件本身（目标），触发事件时调用的函数（监听器），以及用来指定事件被捕获（true）还是冒泡（false）的布尔值（可选）。  
 6.最难的是初始化图表需要的数据格式，分为日周月
+#task18：基础JavaScript练习（一）
+[task18作品](http://s.codepen.io/zhoupipipipipipi/debug/YqLdJp)
+####任务目的:  
+*学习与实践JavaScript的基本语法、语言特性  
+*初步了解JavaScript的事件是什么  
+*初步了解JavaScript中的DOM是什么
+####总结:
+1.看了别人的代码，感觉我实现的太简单了，只用了4个onclick就完成了  
+2.元素和节点的区别，一个元素肯定是一个节点，但是一个节点不一定是一个元素  
+3.firstChild第一个子元素 lastChild最后一个子元素 appendChild() 方法向节点添加最后一个子节点 childNodes 子节点
