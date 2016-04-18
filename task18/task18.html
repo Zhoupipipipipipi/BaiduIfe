@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task18</title>
+    <style>
+        ul{
+            margin-left: -40px;
+        }
+        ul li{
+            float: left;
+            list-style:none;
+            margin: 5px;
+            line-height: 50px;
+            width: 50px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input">
+    <button type="button" onclick="leftIn()">左侧入</button>
+    <button type="button" onclick="rightIn()">右侧入</button>
+    <button type="button" onclick="leftDel()">左侧删</button>
+    <button type="button" onclick="rightDel()">右侧删</button>
+    <ul id="line"></ul>
+
+    <script>
+        function leftIn(){
+            var input=document.getElementById('input');
+            if(input.value==''||isNaN(input.value)){
+                alert('请输入数字');
+                return;
+            }
+            else {
+                var ul = document.getElementById('line');
+                var insert = ul.nextElementSibling;
+                var li = document.createElement('li');
+                var child = ul.childNodes[0];                  //获取第一个子元素
+                li.innerHTML = input.value;
+                ul.insertBefore(li, child);
+            }
+        }
+        function rightIn(){
+            var input=document.getElementById('input');
+            if(input.value==''||isNaN(input.value)){
+                alert('请输入数字');
+                return;
+            }
+            else{
+                var ul=document.getElementById('line');
+                var li=document.createElement('li');
+                li.innerHTML=input.value;
+                ul.appendChild(li);
+            }
+        }
+        function leftDel(){
+            var ul=document.getElementById('line');
+            var li=ul.firstChild;
+            li.remove();
+        }
+        function rightDel(){
+            var ul=document.getElementById('line');
+            var li=ul.lastChild;
+            li.remove();
+        }
+    </script>
+</body>
+</html>
