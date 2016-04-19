@@ -191,4 +191,13 @@ document.getElementById('sort-btn').onclick=function(){btnHandle()};
 ####总结:
 1.看了别人的代码，感觉我实现的太简单了，只用了4个onclick就完成了  
 2.元素和节点的区别，一个元素肯定是一个节点，但是一个节点不一定是一个元素  
-3.firstChild第一个子元素 lastChild最后一个子元素 appendChild() 方法向节点添加最后一个子节点 childNodes 子节点
+3.firstChild第一个子元素 lastChild最后一个子元素 appendChild() 方法向节点添加最后一个子节点 childNodes 子节点  
+#task19：基础JavaScript练习（二）  
+[task19作品](http://s.codepen.io/zhoupipipipipipi/debug/RaJoYy)
+####任务目的:  
+*学习与实践JavaScript的基本语法、语言特性  
+*练习使用JavaScript实现简单的排序算法
+####总结:
+1.本来想用快速排序的，后来还是用了冒泡排序    
+2.shift()和pop()从一个数组的最前面和最后面删除一个值  
+3.unshift()和push()向数组的开头和末尾添加一个值  
