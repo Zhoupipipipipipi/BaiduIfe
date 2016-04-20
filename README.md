@@ -208,7 +208,7 @@ document.getElementById('sort-btn').onclick=function(){btnHandle()};
 ####总结:
 1.indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置，  
 JS判断字符串包含的方法http://www.3lian.com/edu/2015/05-05/210131.html      
-2.split用于将字符串分割，chartData=value.split(/\n|\s|[,]|[，]|[.]/);   //判断分隔符
+2.split用于将字符串分割，chartData=value.split(/\n|\s|[,]|[，]|[.]/);   //判断分隔符  
 3.`function trim(str){
 //删除左右两端的空格
    return str.replace(/(^\s*)|(\s*$)/g, "");
