@@ -19,7 +19,12 @@ function renderChart(){
 /*插入*/
 function In(){
     var input=document.getElementById('content');
-    var value=input.value+' '+chartData;
+    if(chartData==''){
+        var value=input.value;
+    }
+    else{
+        var value=input.value+' '+chartData;
+    }
     chartData=value.split(/\n|\s|[,]|[，]|[.]/);   //判断分隔符
     console.log(chartData);
     renderChart();
