@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task20</title>
+    <style>
+        textarea{
+            height: 100px;
+            width: 200px;
+            position: relative;
+        }
+        #In{
+            position: absolute;
+            left: 220px;
+        }
+        input{
+            position: absolute;
+            left: 270px;
+        }
+        #Out{
+            position: absolute;
+            left: 450px;
+        }
+        ul{
+            margin-left: -40px;
+        }
+        ul li{
+            float: left;
+            list-style:none;
+            margin: 5px;
+            line-height: 50px;
+            padding: 0 10px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #FFD700;
+            border: 2px solid #B8860B;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="content" placeholder="可以为数字、中文、英文等，可以通过用回车,逗号，顿号，空格等符号作为不同内容的间隔">大家好，我是Whuers的成员，111 222 151</textarea>
+    <button type="button" id="In" onclick="In()">插入</button>
+    <input type="text" id="search">
+    <button type="button" id="Out" onclick="Search()">查询</button>
+    <ul id="line"></ul>
+
+    <script src="task20.js"></script>
+</body>
+</html>
