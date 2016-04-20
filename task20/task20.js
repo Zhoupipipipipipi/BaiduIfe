@@ -15,40 +15,52 @@ function renderChart(){
         ul.appendChild(li);
     }
 }
-
+function trim(str){
+//删除左右两端的空格
+   return str.replace(/(^\s*)|(\s*$)/g, "");
+}
 /*插入*/
 function In(){
     var input=document.getElementById('content');
-    if(chartData==''){
-        var value=input.value;
+    var value=trim(input.value);
+    console.log(value);
+    if(value==''||value==' '){
+        alert('请输入要插入的字符');
+        return;
     }
     else{
-        var value=input.value+' '+chartData;
+        if(chartData==''){
+            var value=trim(input.value);
+        }
+        else{
+            var value=trim(input.value)+' '+chartData;
+        }
+        chartData=value.split(/\n|\s|[,]|[，]|[.]/);   //判断分隔符
+        console.log(chartData);
+        renderChart();
     }
-    chartData=value.split(/\n|\s|[,]|[，]|[.]/);   //判断分隔符
-    console.log(chartData);
-    renderChart();
 }
 
 /*查找*/
 function Search(){
     var input=document.getElementById('search');
     var value=input.value;
-    console.log(value);
-    for(var i in chartData){
-        var character=[];             //将每一个数组的字符在放入一个数组里面
-        character=chartData[i].split('');
-        for(var j in character){
-            if(character[j]==value){
+    if(value==''){
+        alert('请输入要查询的字符');
+        return;
+    }
+    else{
+        for(var i in chartData){
+            var bool=chartData[i].indexOf(value);
+            console.log(chartData[i]+bool);
+            if(bool>=0){
                 var n=document.getElementById('C'+i);
                 n.style.backgroundColor='#FFFF00 ';
-                break;                         //跳出，避免之后再改变其颜色
             }
             else{
                 var n=document.getElementById('C'+i);
                 n.style.backgroundColor='#FFD700';
             }
         }
-
     }
 }
