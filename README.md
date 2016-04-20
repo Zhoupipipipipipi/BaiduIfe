@@ -201,3 +201,15 @@ document.getElementById('sort-btn').onclick=function(){btnHandle()};
 1.本来想用快速排序的，后来还是用了冒泡排序    
 2.shift()和pop()从一个数组的最前面和最后面删除一个值  
 3.unshift()和push()向数组的开头和末尾添加一个值  
+#task20：基础JavaScript练习（三）  
+[task20作品]http://s.codepen.io/zhoupipipipipipi/debug/JXZZbX)
+####任务目的:  
+*实践JavaScript数组、字符串相关操作  
+####总结:
+1.indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置，  
+JS判断字符串包含的方法http://www.3lian.com/edu/2015/05-05/210131.html      
+2.split用于将字符串分割，chartData=value.split(/\n|\s|[,]|[，]|[.]/);   //判断分隔符
+3.`function trim(str){
+//删除左右两端的空格
+   return str.replace(/(^\s*)|(\s*$)/g, "");
+}`
