@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task21</title>
+    <style>
+        body{
+            font-family: 微软雅黑;
+        }
+        textarea{
+            margin: 10px 0;
+            height: 100px;
+            width: 200px;
+            display: block;
+        }
+        #line,#TagList{
+            margin-left: -40px;
+        }
+        #TagList li{
+            color: #3CB371;
+            float: left;
+            list-style:none;
+            margin: 5px;
+            line-height: 50px;
+            padding: 0 10px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #E0FFFF ;
+            border: 2px solid #87CECB;
+            border-radius: 5px;
+        }
+        #TagList:after{
+            content:".";
+            height:0;
+            clear:both;
+            visibility:hidden;
+            display:block;
+        }
+        #line li{
+            float: left;
+            list-style:none;
+            margin: 5px;
+            line-height: 50px;
+            padding: 0 10px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #FFD700;
+            border: 2px solid #B8860B;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #d0e9c6;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body onkeydown="keyHit()">
+    <b>Tag:</b>
+    <input type="text" id="Tag" placeholder="回车/逗号/空格均可完成创建">
+    <ul id="TagList"></ul>
+    <textarea placeholder="请输入你的爱好" id="content">足球 篮球 羽毛球</textarea>
+    <button type="button" id="button">确认兴趣爱好</button>
+    <ul id="line"></ul>
+    <script src="task21.js"></script>
+</body>
+</html>
