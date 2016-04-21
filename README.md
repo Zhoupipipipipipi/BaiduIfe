@@ -202,7 +202,7 @@ document.getElementById('sort-btn').onclick=function(){btnHandle()};
 2.shift()和pop()从一个数组的最前面和最后面删除一个值  
 3.unshift()和push()向数组的开头和末尾添加一个值  
 #task20：基础JavaScript练习（三）  
-[task20作品]http://s.codepen.io/zhoupipipipipipi/debug/JXZZbX)
+[task20作品](http://s.codepen.io/zhoupipipipipipi/debug/JXZZbX)
 ####任务目的:  
 *实践JavaScript数组、字符串相关操作  
 ####总结:
@@ -213,3 +213,14 @@ JS判断字符串包含的方法http://www.3lian.com/edu/2015/05-05/210131.html
 //删除左右两端的空格
    return str.replace(/(^\s*)|(\s*$)/g, "");
 }`
+#task21：基础JavaScript练习（四）  
+[task20作品](http://s.codepen.io/zhoupipipipipipi/debug/eZKaqZ)
+####任务目的:  
+*学习与实践JavaScript的基本语法、语言特性  
+*练习使用JavaScript实现拖拽功能 
+####总结:
+1.鼠标事件 onmouseover 和 onmouseout事件可用于在鼠标指针移动到或离开元素时触发函数。onmousedown、onmouseup事件是鼠标点击的全部过程。首先当某个鼠标按钮被点击时，触发 onmousedown 事件，然后，当鼠标按钮被松开时，会触发 onmouseup 事件。  
+2.键盘事件 onkeydown 事件会在用户按下一个键盘按键时发生。要考虑兼容性，但是我还没来得及考虑。  
+keyCode 空格=32 回车=13 逗号=188，但是输入逗号的时候出现个bug，还没修改  
+3.splice splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。splice(i,n)——i是从第几个数字开始，n是删除n个数  
+
