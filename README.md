@@ -1,3 +1,4 @@
+###[作品集](https://github.com/Zhoupipipipipipi/BaiduIfe/blob/master/task3/img/leftLogo.jpg?raw=true)  
 #task2:零基础HTML及CSS编码（一)  
 [task2作品](http://s.codepen.io/zhoupipipipipipi/debug/JXNbRK)
 ####任务目的:
@@ -223,4 +224,18 @@ JS判断字符串包含的方法http://www.3lian.com/edu/2015/05-05/210131.html
 2.键盘事件 onkeydown 事件会在用户按下一个键盘按键时发生。要考虑兼容性，但是我还没来得及考虑。  
 keyCode 空格=32 回车=13 逗号=188，但是输入逗号的时候出现个bug，还没修改  
 3.splice splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。splice(i,n)——i是从第几个数字开始，n是删除n个数  
-
+#task43：多功能相册之拼图布局  
+[task43作品](http://s.codepen.io/zhoupipipipipipi/debug/xVydmx)
+####任务目的:  
+*练习综合运用HTML、CSS、JavaScript实现局部功能  
+*为第四阶段的相册任务做准备  
+*结合CSS，JavaScript掌握更加复杂的布局方式  
+####总结:
+1.clip-path的使用，以及在火狐浏览器考虑兼容性时要使用clipPath.svg。  
+2.CSS3 object-fit:cover  避免图片被压缩  
+fill: 中文释义“填充”。默认值。替换内容拉伸填满整个content box, 不保证保持原有的比例。  
+contain: 中文释义“包含”。保持原有尺寸比例。保证替换内容尺寸一定可以在容器里面放得下。因此，此参数可能会在容器内留下空白。  
+cover: 中文释义“覆盖”。保持原有尺寸比例。保证替换内容尺寸一定大于容器尺寸，宽度和高度至少有一个和容器一致。因此，此参数可能会让替换内容（如图片）部分区域不可见。  
+none: 中文释义“无”。保持原有尺寸比例。同时保持替换内容原始尺寸大小。  
+scale-down: 中文释义“降低”。就好像依次设置了none或contain, 最终呈现的是尺寸比较小的那个  
+3.:nth-of-type(n) 选择器匹配属于父元素的特定类型的第 N 个子元素的每个元素.  
