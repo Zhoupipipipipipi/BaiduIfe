@@ -30,7 +30,7 @@ window.onload=function(){
     }
     //点击放大图片
     var cparent=document.getElementById('container');
-    var img=document.getElementsByTagName('img');
+    var img=cparent.getElementsByTagName('img');
     for(var i=0;i<img.length;i++){
         img[i].addEventListener('click',Big,false);
     }
@@ -100,11 +100,11 @@ function Big(){
     var cparent=document.getElementById('content');
     var bigImg=document.getElementById('clickBig');
     var img=bigImg.getElementsByTagName('img');
-    console.log(img);
+    var pageHeight=document.documentElement.clientHeight||document.body.clientHeight;
     img[0].src=this.src;
+    cparent.style.height=pageHeight+'px';
     cparent.style.display='block';
     bigImg.style.display='block';
-    var pageHeight=document.documentElement.clientHeight||document.body.clientHeight;
     var pageWidth=cparent.offsetWidth;
     bigImg.style.top=(pageHeight-img[0].height)/2+'px';
     bigImg.style.left=(pageWidth-img[0].width)/2+'px';
