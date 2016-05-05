@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 黑体;
+}
+#container{
+    position: relative;
+    margin: 0 auto;
+}
+.box{
+    float: left;
+    padding: 5px;
+}
+.box_img{
+    border: 1px solid #cccccc;
+    border-shadow: 0 0 5px #cccccc;
+    border-radius: 5px;
+}
+.box_img img{
+    padding: 5px;
+    width: 250px;
+    height: auto;
+}
+.box_img p{
+    text-align: center;
+    padding: 0 5px 5px 5px;
+}
+#content{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 890px;
+    background-color: #080808;
+}
+#clickBig{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+#clickBig img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+button{
+    float: right;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
