@@ -1,4 +1,4 @@
-###[作品集](https://github.com/Zhoupipipipipipi/BaiduIfe/blob/master/task3/img/leftLogo.jpg?raw=true)  
+###[作品集](http://s.codepen.io/zhoupipipipipipi/debug/pyPNNB)  
 #task2:零基础HTML及CSS编码（一)  
 [task2作品](http://s.codepen.io/zhoupipipipipipi/debug/JXNbRK)
 ####任务目的:
@@ -239,3 +239,24 @@ cover: 中文释义“覆盖”。保持原有尺寸比例。保证替换内容�
 none: 中文释义“无”。保持原有尺寸比例。同时保持替换内容原始尺寸大小。  
 scale-down: 中文释义“降低”。就好像依次设置了none或contain, 最终呈现的是尺寸比较小的那个  
 3.:nth-of-type(n) 选择器匹配属于父元素的特定类型的第 N 个子元素的每个元素.  
+#task44：多功能相册之瀑布布局  
+[task44作品](http://s.codepen.io/zhoupipipipipipi/debug/RaExgy)
+####任务目的:  
+*练习综合运用HTML、CSS、JavaScript实现局部功能  
+*为第四阶段的相册任务做准备  
+*结合CSS，JavaScript掌握瀑布布局方式  
+####总结:
+1.思路：  
+  a.将img加载出来，获取宽度和设置列数;  
+  b.设置照片的top和left,top=最小那一列的高度，left=所在列数*图片的宽度+padding*2;  
+  c.拉到底部继续加载图片，将图片的路径放在json中，判断当最后一个元素距离顶部的高度<(页面当前高度+滚动距离顶部的高度)时创建元素  
+  d.点击放大图片  
+2.json 对象用{}，数组用[]  
+3.滚动时触发函数 window.onscroll=function(){}  
+4.var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;   //doucumentElement和body,考虑浏览器兼容 获得滚动的高度  
+5.offsetWidth=width+padding+border  
+  document.body.clientWidth/clientHeight(网页可见区域宽/高)  
+  scrollTop 设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的高度  
+  offsetTop:获取对象相对于版面或有offsetTop属性指定父坐标计算顶端的值  
+6.Math.min()不支持数组，Math.min.apply(null,array)可获取数组的最小值，最大值同理  
+
