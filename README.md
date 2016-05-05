@@ -259,4 +259,5 @@ scale-down: 中文释义“降低”。就好像依次设置了none或contain, �
   scrollTop 设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的高度  
   offsetTop:获取对象相对于版面或有offsetTop属性指定父坐标计算顶端的值  
 6.Math.min()不支持数组，Math.min.apply(null,array)可获取数组的最小值，最大值同理  
+7.设置背影透明度background-color:rgbs(0,0,0,0.8)  
 
